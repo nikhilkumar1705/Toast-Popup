@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+hr{
+    border: 2px solid #0000001a;
+    box-shadow: 0 4px 4px #0000001a;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: max(40%, 250px);
+    margin: 2rem auto;
+}
+#horizontal-position{
+    width: 100%;
+    height: 40px ;
+}
+#vertical-position{
+    width: 100%;
+    height: 40px ;
+}
+#type{
+    width: 100%;
+    height: 40px ;
+}
+#message{
+    width: 100%;
+    height: 40px ;
+}
+#duraction{
+    flex-grow: 1;
+}
+#duration-wrapper{
+    width: 100%;
+    height: 40px ;
+}
+.btn-primary{
+    padding: 10px 16px;
+    background-color: #0ff;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.toast{
+    padding: 0.5em;
+    background-color: pink;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.25);
+    width: 20%;
+}
+/* .toast + .toast{
+    margin-top: 8px;
+    left: 1rem;
+} */
+
+.toast-container{
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px ;
+}
+
+.toast-container .right{
+    left: auto;
+    right: 1rem;
+}
+.toast-container .bottom{
+    top: auto;
+    bottom: 1rem;
+}
